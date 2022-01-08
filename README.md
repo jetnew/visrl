@@ -8,7 +8,15 @@ pip install visrl
 
 ## Usage
 ```python
-import visrl
+import gym
+from stable_baselines3 import DQN
+from visrl import Visrl
+
+env = gym.make('LunarLander-v2')
+agent = DQN('MlpPolicy', env, verbose=1)
+agent.learn(total_timesteps=int(2e5))
+
+Visrl(env, agent).run()
 ```
 
 ## Features
@@ -19,4 +27,3 @@ import visrl
 - Values: Show all relevant values and plot history
 - Breakpoint: Run until condition involving values
 - Playback/record: Show past frames and actions
-- Save point: Save environment state to restart from
