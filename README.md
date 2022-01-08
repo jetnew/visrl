@@ -11,7 +11,7 @@ pip install visrl
 import visrl
 ```
 
-Features:
+## Features
 - Key-to-action: Set action hotkeys
 - Step: Take actions 1 step at a time
 - Continue: Return control to agent

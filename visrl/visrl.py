@@ -225,5 +225,6 @@ class Visrl:
                 self.update_slider()
 
         self.window.close()
+        self.env.close()
 
 
