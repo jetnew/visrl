@@ -44,7 +44,7 @@ class Visrl:
              sg.Button("gif", key='gif'),
              sg.Button("history", key='history')],
         ]
-        self.window = sg.Window("RL Debugger", layout,
+        self.window = sg.Window("Visrl", layout,
                    return_keyboard_events=True,
                    use_default_focus=False,
                     element_justification='c')

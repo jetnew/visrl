@@ -5,7 +5,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 setup(
     name='visrl',
-    version='0.1.5',
+    version='0.1.7',
     description="A simple wrapper to analyse and visualise reinforcement learning agents' behaviour in the environment.",
     long_description=long_description,
     long_description_content_type='text/markdown',
